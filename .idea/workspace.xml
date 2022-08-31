@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="195ac126-a3f2-40ea-a7e9-45f5ab0ffec3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.docker/nginx/conf.d/php.conf" beforeDir="false" afterPath="$PROJECT_DIR$/.docker/nginx/conf.d/php.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codestream.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codestream.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,7 +19,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/.docker/nginx/conf.d/php.conf" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/.docker/nginx/conf.d/phpmyadmin.conf" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/docker-compose.yml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/includes/handlers/register-handler.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/register.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -63,6 +67,7 @@
       <workItem from="1661942123666" duration="1190000" />
       <workItem from="1661943325352" duration="839000" />
       <workItem from="1661947448188" duration="685000" />
+      <workItem from="1661978872736" duration="747000" />
     </task>
     <servers />
   </component>
