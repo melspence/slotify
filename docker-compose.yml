@@ -7,9 +7,9 @@ services:
   nginx:
     image: nginx:1.21-alpine
     ports:
-      - 80:80
+      - "80:80"
     volumes:
-      - ./src:/var/www/php
+      - ./src:/var/www/slotify
       - ./.docker/nginx/conf.d:/etc/nginx/conf.d
       - phpmyadmindata:/var/www/phpmyadmin
     depends_on:
@@ -19,9 +19,9 @@ services:
   # PHP Service
   php:
     build: ./.docker/php
-    working_dir: /var/www/php
+    working_dir: /var/www/slotify
     volumes:
-      - ./src:/var/www/php
+      - ./src:/var/www/slotify
     depends_on:
       mysql:
         condition: service_healthy
@@ -32,7 +32,9 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_ROOT_HOST: "%"
-      MYSQL_DATABASE: demo
+      MYSQL_DATABASE: slotify
+    ports:
+      - "3306:3306"
     volumes:
       - ./.docker/mysql/my.cnf:/etc/mysql/conf.d/my.cnf
       - mysqldata:/var/lib/mysql
